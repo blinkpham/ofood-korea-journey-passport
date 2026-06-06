@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" role="img" aria-label="Journey postcard paper frame">
+  <defs>
+    <linearGradient id="postcardPaper" x1="22" y1="16" x2="136" y2="204" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset=".7" stop-color="#fbfff9"/>
+      <stop offset="1" stop-color="#eff8f2"/>
+    </linearGradient>
+    <pattern id="softPattern" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r=".9" fill="#16833a" opacity=".07"/>
+      <path d="M0 14c6-4 12-4 18 0" fill="none" stroke="#e1ab22" stroke-width="1" opacity=".08"/>
+    </pattern>
+    <filter id="postcardShadow" x="4" y="4" width="152" height="212" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17231b" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <g filter="url(#postcardShadow)">
+    <path d="M20 10h120c0 7 8 7 8 14s-8 7-8 14 8 7 8 14-8 7-8 14 8 7 8 14-8 7-8 14 8 7 8 14-8 7-8 14 8 7 8 14-8 7-8 14 8 7 8 14-8 7-8 14 8 7 8 14-8 7-8 14 8 7 8 14H20c0-7-8-7-8-14s8-7 8-14-8-7-8-14 8-7 8-14-8-7-8-14 8-7 8-14-8-7-8-14 8-7 8-14-8-7-8-14 8-7 8-14-8-7-8-14 8-7 8-14-8-7-8-14 8-7 8-14Z" fill="url(#postcardPaper)" stroke="#b8d8c3" stroke-width="3"/>
+    <path d="M30 28h78a10 10 0 0 1 10 10v102a10 10 0 0 1-10 10H30a10 10 0 0 1-10-10V38a10 10 0 0 1 10-10Z" fill="#fffefa" stroke="#dde8dd" stroke-width="2"/>
+    <path d="M30 28h78a10 10 0 0 1 10 10v102a10 10 0 0 1-10 10H30a10 10 0 0 1-10-10V38a10 10 0 0 1 10-10Z" fill="url(#softPattern)"/>
+    <rect x="122" y="30" width="18" height="108" rx="9" fill="#f4faf6" stroke="#dde8dd" stroke-width="2"/>
+    <rect x="126" y="152" width="16" height="22" rx="5" fill="#fffdf8" stroke="#e1ab22" stroke-width="2" opacity=".72"/>
+    <path d="M30 170h78" stroke="#b8d8c3" stroke-width="2" stroke-linecap="round" opacity=".58"/>
+    <path d="M30 188h54" stroke="#b8d8c3" stroke-width="2" stroke-linecap="round" opacity=".42"/>
+  </g>
+</svg>

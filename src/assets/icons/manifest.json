@@ -1,0 +1,122 @@
+{
+  "qr": {
+    "source": "phone-qr-flat",
+    "role": "nav",
+    "file": "./assets/icons/qr.svg"
+  },
+  "scan": {
+    "source": "scanner-flat",
+    "role": "nav",
+    "file": "./assets/icons/scan.svg"
+  },
+  "postcard": {
+    "source": "mail-send-envelope-flat",
+    "role": "currency",
+    "file": "./assets/icons/postcard.svg"
+  },
+  "travel": {
+    "source": "suitcase-rolling-flat",
+    "role": "nav",
+    "file": "./assets/icons/travel.svg"
+  },
+  "travelReward": {
+    "source": "tag-flat",
+    "role": "reward",
+    "file": "./assets/icons/travelReward.svg"
+  },
+  "loc": {
+    "source": "chef-toque-hat-flat",
+    "role": "currency",
+    "file": "./assets/icons/loc.svg"
+  },
+  "voucher": {
+    "source": "discount-percent-coupon-flat",
+    "role": "reward",
+    "file": "./assets/icons/voucher.svg"
+  },
+  "passport": {
+    "source": "passport-globe-flat",
+    "role": "nav",
+    "file": "./assets/icons/passport.svg"
+  },
+  "map": {
+    "source": "map-location-flat",
+    "role": "nav",
+    "file": "./assets/icons/map.svg"
+  },
+  "winmart": {
+    "source": "shopping-bag-hand-bag-2-flat",
+    "role": "win",
+    "file": "./assets/icons/winmart.svg"
+  },
+  "ugc": {
+    "source": "tiktok-flat",
+    "role": "utility",
+    "file": "./assets/icons/ugc.svg"
+  },
+  "spin": {
+    "source": "target-flat",
+    "role": "reward",
+    "file": "./assets/icons/spin.svg"
+  },
+  "help": {
+    "source": "information-circle-flat",
+    "role": "utility",
+    "file": "./assets/icons/help.svg"
+  },
+  "settings": {
+    "source": "cog-flat",
+    "role": "neutral",
+    "file": "./assets/icons/settings.svg"
+  },
+  "share": {
+    "source": "share-link-flat",
+    "role": "utility",
+    "file": "./assets/icons/share.svg"
+  },
+  "check": {
+    "source": "check-square-flat",
+    "role": "currency",
+    "file": "./assets/icons/check.svg"
+  },
+  "lock": {
+    "source": "padlock-square-1-flat",
+    "role": "neutral",
+    "file": "./assets/icons/lock.svg"
+  },
+  "phone": {
+    "source": "iphone-flat",
+    "role": "utility",
+    "file": "./assets/icons/phone.svg"
+  },
+  "link": {
+    "source": "link-chain-flat",
+    "role": "utility",
+    "file": "./assets/icons/link.svg"
+  },
+  "spark": {
+    "source": "star-badge-flat",
+    "role": "reward",
+    "file": "./assets/icons/spark.svg"
+  },
+  "bell": {
+    "source": "bell-notification-flat",
+    "role": "utility",
+    "file": "./assets/icons/bell.svg"
+  },
+  "shield": {
+    "source": "shield-1-flat",
+    "role": "currency",
+    "file": "./assets/icons/shield.svg"
+  },
+  "rules": {
+    "source": "text-file-flat",
+    "role": "utility",
+    "file": "./assets/icons/rules.svg"
+  },
+  "policy": {
+    "source": "warranty-badge-highlight-flat",
+    "role": "reward",
+    "file": "./assets/icons/policy.svg"
+  }
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Travel reward wheel">
+  <defs>
+    <linearGradient id="travelRim" x1="58" y1="31" x2="252" y2="290" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e9f8ef"/>
+      <stop offset=".48" stop-color="#ffd95a"/>
+      <stop offset="1" stop-color="#16833a"/>
+    </linearGradient>
+    <radialGradient id="travelHub" cx="40%" cy="30%" r="74%">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset=".74" stop-color="#e9f8ef"/>
+      <stop offset="1" stop-color="#ccead6"/>
+    </radialGradient>
+    <pattern id="mapLines" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M-4 21c10-9 19-9 32 0" fill="none" stroke="#fffdf8" stroke-width="2" opacity=".32"/>
+    </pattern>
+    <filter id="travelShadow" x="18" y="18" width="284" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="9" stdDeviation="6" flood-color="#17231b" flood-opacity=".17"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="166" r="134" fill="#17231b" opacity=".12"/>
+  <g filter="url(#travelShadow)">
+    <circle cx="160" cy="156" r="138" fill="url(#travelRim)"/>
+    <circle cx="160" cy="156" r="119" fill="#fffdf8"/>
+    <path d="M160 156 160 37a119 119 0 0 1 103 59.5Z" fill="#16833a"/>
+    <path d="M160 156 263 96.5a119 119 0 0 1 0 119Z" fill="#eaf5ff"/>
+    <path d="M160 156 263 215.5A119 119 0 0 1 160 275Z" fill="#ffd95a"/>
+    <path d="M160 156v119A119 119 0 0 1 57 215.5Z" fill="#d71920"/>
+    <path d="M160 156 57 215.5a119 119 0 0 1 0-119Z" fill="#e9f8ef"/>
+    <path d="M160 156 57 96.5A119 119 0 0 1 160 37Z" fill="#007a3d"/>
+    <circle cx="160" cy="156" r="119" fill="url(#mapLines)"/>
+    <circle cx="160" cy="156" r="119" fill="none" stroke="#fffdf8" stroke-width="6" opacity=".82"/>
+    <g stroke="#fffdf8" stroke-width="3" opacity=".74">
+      <path d="M160 156V39"/>
+      <path d="m160 156 101-58"/>
+      <path d="m160 156 101 58"/>
+      <path d="M160 156v117"/>
+      <path d="m160 156-101 58"/>
+      <path d="m160 156-101-58"/>
+    </g>
+    <path d="M74 78c37-41 98-57 151-36" fill="none" stroke="#fffdf8" stroke-width="11" stroke-linecap="round" opacity=".45"/>
+    <g fill="#fffdf8" opacity=".9">
+      <path d="M148 62h24l10 16-22 24-22-24Z"/>
+      <rect x="215" y="111" width="38" height="26" rx="8" transform="rotate(10 234 124)"/>
+      <path d="M222 201h30v32h-30zM226 201v-8c0-7 6-12 13-12s13 5 13 12v8" fill="none" stroke="#fffdf8" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="160" cy="241" r="12"/>
+      <path d="M82 207c12-14 29-14 41 0-12 14-29 14-41 0Z"/>
+      <rect x="79" y="111" width="34" height="28" rx="8" transform="rotate(-11 96 125)"/>
+    </g>
+    <circle cx="160" cy="156" r="54" fill="url(#travelHub)" stroke="#16833a" stroke-width="7"/>
+    <path d="M130 146h53c6 0 11 5 11 11v32H119v-32c0-6 5-11 11-11Z" fill="#d71920"/>
+    <path d="M142 146v-12c0-7 6-13 13-13h10c7 0 13 6 13 13v12" fill="none" stroke="#16833a" stroke-width="7" stroke-linecap="round"/>
+    <path d="M124 157h70v10h-70Z" fill="#ffd95a"/>
+    <path d="M135 151h48" stroke="#fffdf8" stroke-width="5" stroke-linecap="round" opacity=".45"/>
+  </g>
+</svg>

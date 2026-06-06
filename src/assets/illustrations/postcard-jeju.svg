@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 220" role="img" aria-label="Jeju postcard illustration">
+  <defs>
+    <linearGradient id="jejuSky" x1="34" y1="26" x2="205" y2="178" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eaf5ff"/>
+      <stop offset=".62" stop-color="#e9f8ef"/>
+      <stop offset="1" stop-color="#fffdf8"/>
+    </linearGradient>
+    <filter id="jejuShadow" x="24" y="18" width="192" height="200" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#17231b" flood-opacity=".15"/>
+    </filter>
+  </defs>
+  <ellipse cx="120" cy="203" rx="72" ry="12" fill="#17231b" opacity=".12"/>
+  <g filter="url(#jejuShadow)">
+    <rect x="34" y="24" width="172" height="184" rx="18" fill="#fffdf8" stroke="#007a3d" stroke-width="4"/>
+    <rect x="48" y="42" width="144" height="110" rx="13" fill="url(#jejuSky)"/>
+    <circle cx="168" cy="62" r="18" fill="#ffd95a"/>
+    <path d="M50 130c26-23 44-34 66-33 28 1 44 25 76 18v37H50Z" fill="#16833a"/>
+    <path d="M67 141c30-18 53-19 83-4 18 9 31 9 42 3v15H67Z" fill="#007a3d" opacity=".58"/>
+    <path d="M76 121c12-35 38-52 77-39 4 18-15 38-37 40-15 1-27-2-40-1Z" fill="#e1ab22"/>
+    <path d="M91 107c13-13 29-17 49-11" fill="none" stroke="#fffdf8" stroke-width="6" stroke-linecap="round" opacity=".62"/>
+    <path d="M76 121c18-5 42-5 70 3" stroke="#9f1418" stroke-width="5" stroke-linecap="round"/>
+    <rect x="57" y="171" width="96" height="8" rx="4" fill="#16833a" opacity=".32"/>
+    <rect x="57" y="186" width="68" height="8" rx="4" fill="#d71920" opacity=".58"/>
+    <rect x="157" y="166" width="27" height="31" rx="5" fill="#fffdf8" stroke="#e1ab22" stroke-width="3"/>
+  </g>
+</svg>

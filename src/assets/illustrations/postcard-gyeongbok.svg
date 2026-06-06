@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 220" role="img" aria-label="Gyeongbokgung postcard illustration">
+  <defs>
+    <linearGradient id="palaceSky" x1="35" y1="26" x2="202" y2="178" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eaf5ff"/>
+      <stop offset=".7" stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#fff0e7"/>
+    </linearGradient>
+    <filter id="palaceShadow" x="24" y="18" width="192" height="200" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#17231b" flood-opacity=".15"/>
+    </filter>
+  </defs>
+  <ellipse cx="120" cy="203" rx="72" ry="12" fill="#17231b" opacity=".12"/>
+  <g filter="url(#palaceShadow)">
+    <rect x="34" y="24" width="172" height="184" rx="18" fill="#fffdf8" stroke="#16833a" stroke-width="4"/>
+    <rect x="48" y="42" width="144" height="110" rx="13" fill="url(#palaceSky)"/>
+    <circle cx="168" cy="62" r="18" fill="#ffd95a"/>
+    <path d="M62 105h116l-16-18H78Z" fill="#17231b"/>
+    <path d="M70 109h100l-12 17H82Z" fill="#d71920"/>
+    <path d="M83 126h74v34H83Z" fill="#fffdf8" stroke="#007a3d" stroke-width="4"/>
+    <path d="M92 131v28M120 131v28M148 131v28" stroke="#d71920" stroke-width="5"/>
+    <path d="M73 160h106" stroke="#e1ab22" stroke-width="8" stroke-linecap="round"/>
+    <path d="M56 100h128" stroke="#ffd95a" stroke-width="6" stroke-linecap="round"/>
+    <rect x="57" y="171" width="96" height="8" rx="4" fill="#16833a" opacity=".32"/>
+    <rect x="57" y="186" width="68" height="8" rx="4" fill="#d71920" opacity=".58"/>
+    <rect x="157" y="166" width="27" height="31" rx="5" fill="#fffdf8" stroke="#e1ab22" stroke-width="3"/>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Weekday voucher wheel">
+  <defs>
+    <linearGradient id="weekdayRim" x1="60" y1="30" x2="252" y2="288" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset=".5" stop-color="#e9f8ef"/>
+      <stop offset="1" stop-color="#007a3d"/>
+    </linearGradient>
+    <pattern id="weekdayTicks" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 10h20" stroke="#fffdf8" stroke-width="2" opacity=".22"/>
+    </pattern>
+    <filter id="weekdayShadow" x="18" y="18" width="284" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="9" stdDeviation="6" flood-color="#17231b" flood-opacity=".17"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="166" r="134" fill="#17231b" opacity=".12"/>
+  <g filter="url(#weekdayShadow)">
+    <circle cx="160" cy="156" r="138" fill="url(#weekdayRim)"/>
+    <circle cx="160" cy="156" r="119" fill="#fffdf8"/>
+    <path d="M160 156 160 37a119 119 0 0 1 103 59.5Z" fill="#007a3d"/>
+    <path d="M160 156 263 96.5a119 119 0 0 1 0 119Z" fill="#ffd95a"/>
+    <path d="M160 156 263 215.5A119 119 0 0 1 160 275Z" fill="#16833a"/>
+    <path d="M160 156v119A119 119 0 0 1 57 215.5Z" fill="#e9f8ef"/>
+    <path d="M160 156 57 215.5a119 119 0 0 1 0-119Z" fill="#d71920"/>
+    <path d="M160 156 57 96.5A119 119 0 0 1 160 37Z" fill="#eaf5ff"/>
+    <circle cx="160" cy="156" r="119" fill="url(#weekdayTicks)"/>
+    <circle cx="160" cy="156" r="119" fill="none" stroke="#fffdf8" stroke-width="6" opacity=".84"/>
+    <g stroke="#fffdf8" stroke-width="3" opacity=".74">
+      <path d="M160 156V39"/><path d="m160 156 101-58"/><path d="m160 156 101 58"/><path d="M160 156v117"/><path d="m160 156-101 58"/><path d="m160 156-101-58"/>
+    </g>
+    <path d="M74 78c37-41 98-57 151-36" fill="none" stroke="#fffdf8" stroke-width="11" stroke-linecap="round" opacity=".45"/>
+    <g fill="#fffdf8" opacity=".9">
+      <circle cx="160" cy="74" r="10"/>
+      <circle cx="229" cy="126" r="10" fill="#007a3d"/>
+      <path d="M219 205h34v28h-34z" rx="8"/>
+      <circle cx="160" cy="250" r="10" fill="#16833a"/>
+      <circle cx="91" cy="214" r="12"/>
+      <circle cx="91" cy="126" r="10" fill="#007a3d"/>
+    </g>
+    <circle cx="160" cy="156" r="54" fill="#fffdf8" stroke="#007a3d" stroke-width="7"/>
+    <path d="M121 139h78v46h-78Z" fill="#007a3d"/>
+    <path d="M121 139h78v13h-78Z" fill="#ffd95a"/>
+    <circle cx="121" cy="162" r="8" fill="#fffdf8"/>
+    <circle cx="199" cy="162" r="8" fill="#fffdf8"/>
+    <path d="M149 177 181 145" stroke="#fffdf8" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="146" cy="148" r="6" fill="#fffdf8"/>
+    <circle cx="184" cy="174" r="6" fill="#fffdf8"/>
+  </g>
+</svg>

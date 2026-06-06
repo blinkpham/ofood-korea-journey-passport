@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 220" role="img" aria-label="Family login character">
+  <defs>
+    <linearGradient id="loginDress" x1="84" y1="86" x2="153" y2="196" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff5c62"/>
+      <stop offset="1" stop-color="#d71920"/>
+    </linearGradient>
+    <linearGradient id="loginGloss" x1="74" y1="30" x2="165" y2="188" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffdf8" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#fffdf8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="loginShadow" x="36" y="20" width="176" height="198" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#17231b" flood-opacity=".15"/>
+    </filter>
+  </defs>
+  <ellipse cx="121" cy="200" rx="72" ry="13" fill="#17231b" opacity=".12"/>
+  <g filter="url(#loginShadow)">
+    <path d="M68 107c0-34 24-61 56-61s56 27 56 61v65c0 14-11 25-25 25H93c-14 0-25-11-25-25Z" fill="url(#loginDress)"/>
+    <path d="M82 113c0-22 16-40 38-40s38 18 38 40v36H82Z" fill="url(#loginGloss)" opacity=".8"/>
+    <circle cx="122" cy="70" r="34" fill="#ffe1c8"/>
+    <path d="M83 67c7-25 27-39 51-35 22 4 36 20 39 44-18-11-38-13-59-5-13 5-24 4-31-4Z" fill="#17231b"/>
+    <circle cx="109" cy="75" r="3.4" fill="#17231b"/>
+    <circle cx="136" cy="75" r="3.4" fill="#17231b"/>
+    <path d="M113 91c10 7 20 7 29 0" fill="none" stroke="#9f1418" stroke-width="4" stroke-linecap="round"/>
+    <path d="M69 123c-19 6-29 17-28 34 1 13 9 23 23 28" fill="none" stroke="#ffe1c8" stroke-width="13" stroke-linecap="round"/>
+    <path d="M181 122c18 7 28 18 27 35-1 13-9 22-22 27" fill="none" stroke="#ffe1c8" stroke-width="13" stroke-linecap="round"/>
+    <circle cx="64" cy="185" r="12" fill="#ffd95a"/>
+    <circle cx="186" cy="185" r="12" fill="#ffd95a"/>
+    <rect x="96" y="135" width="52" height="36" rx="12" fill="#fffdf8"/>
+    <path d="M104 151h36M104 160h24" stroke="#16833a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M158 38h27l9 10-22 25-22-25Z" fill="#ffd95a"/>
+    <path d="M159 38h26l-5 8h-16Z" fill="#fffdf8" opacity=".52"/>
+  </g>
+</svg>

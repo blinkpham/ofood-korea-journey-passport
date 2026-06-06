@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 132" role="img" aria-label="Weekend WinMart voucher frame">
+  <defs>
+    <linearGradient id="weekendVoucher" x1="18" y1="12" x2="336" y2="124" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset=".58" stop-color="#fff7dc"/>
+      <stop offset="1" stop-color="#ffd95a"/>
+    </linearGradient>
+    <pattern id="weekendVoucherPattern" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="6" r="1.4" fill="#d71920" opacity=".16"/>
+      <path d="M14 16h6" stroke="#007a3d" stroke-width="2" opacity=".16"/>
+    </pattern>
+    <filter id="weekendVoucherShadow" x="6" y="6" width="348" height="124" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#17231b" flood-opacity=".15"/>
+    </filter>
+  </defs>
+  <g filter="url(#weekendVoucherShadow)">
+    <path d="M23 16h314a10 10 0 0 1 10 10v28a18 18 0 0 0 0 36v16a10 10 0 0 1-10 10H23a10 10 0 0 1-10-10V90a18 18 0 0 0 0-36V26a10 10 0 0 1 10-10Z" fill="url(#weekendVoucher)" stroke="#d71920" stroke-width="3"/>
+    <path d="M23 16h314a10 10 0 0 1 10 10v16H13V26a10 10 0 0 1 10-10Z" fill="#d71920"/>
+    <path d="M13 42h334v11H13Z" fill="#007a3d"/>
+    <path d="M247 52v62" stroke="#d71920" stroke-width="2" stroke-dasharray="6 7" opacity=".52"/>
+    <path d="M13 54a18 18 0 0 1 0 36M347 54a18 18 0 0 0 0 36" fill="none" stroke="#fffdf8" stroke-width="5"/>
+    <rect x="28" y="68" width="190" height="25" rx="12.5" fill="#fffdf8"/>
+    <rect x="28" y="98" width="132" height="8" rx="4" fill="#d71920" opacity=".26"/>
+    <circle cx="292" cy="83" r="30" fill="#007a3d"/>
+    <path d="M276 96 306 66" stroke="#fffdf8" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="279" cy="70" r="6" fill="#fffdf8"/>
+    <circle cx="306" cy="96" r="6" fill="#fffdf8"/>
+    <path d="M13 42h334v74H13Z" fill="url(#weekendVoucherPattern)"/>
+    <path d="M31 26h92" stroke="#fffdf8" stroke-width="7" stroke-linecap="round" opacity=".62"/>
+  </g>
+</svg>

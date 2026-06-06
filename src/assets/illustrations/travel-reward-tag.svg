@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 220" role="img" aria-label="Travel reward tag">
+  <defs>
+    <linearGradient id="tagFace" x1="46" y1="30" x2="190" y2="192" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset=".55" stop-color="#e9f8ef"/>
+      <stop offset="1" stop-color="#cdeed7"/>
+    </linearGradient>
+    <linearGradient id="tagBand" x1="72" y1="128" x2="180" y2="184" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d71920"/>
+      <stop offset="1" stop-color="#9f1418"/>
+    </linearGradient>
+    <pattern id="tagPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 15c7-6 13-6 20 0" fill="none" stroke="#16833a" stroke-width="1.5" opacity=".13"/>
+    </pattern>
+    <filter id="tagShadow" x="28" y="18" width="192" height="204" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#17231b" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <ellipse cx="121" cy="201" rx="70" ry="12" fill="#17231b" opacity=".12"/>
+  <g filter="url(#tagShadow)">
+    <path d="M69 35h102c9 0 16 7 16 16v122c0 9-7 16-16 16H69c-9 0-16-7-16-16V51c0-9 7-16 16-16Z" fill="url(#tagFace)" stroke="#16833a" stroke-width="4"/>
+    <path d="M53 48c34 18 85 18 134 0v31c-45 17-93 17-134 0Z" fill="#ffd95a"/>
+    <path d="M53 78h134v95c0 9-7 16-16 16H69c-9 0-16-7-16-16Z" fill="url(#tagPattern)"/>
+    <circle cx="120" cy="57" r="15" fill="#fffdf8"/>
+    <circle cx="120" cy="57" r="7" fill="#16833a"/>
+    <path d="M80 122h80l12 16-52 48-52-48Z" fill="url(#tagBand)"/>
+    <path d="M80 122h80l-12 18H92Z" fill="#fffdf8" opacity=".42"/>
+    <path d="M84 99h72" stroke="#16833a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M96 110h48" stroke="#007a3d" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+  </g>
+</svg>

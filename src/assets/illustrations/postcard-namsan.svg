@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 220" role="img" aria-label="Namsan postcard illustration">
+  <defs>
+    <linearGradient id="namsanSky" x1="34" y1="26" x2="204" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eaf5ff"/>
+      <stop offset=".58" stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#e9f8ef"/>
+    </linearGradient>
+    <filter id="namsanShadow" x="24" y="18" width="192" height="200" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#17231b" flood-opacity=".15"/>
+    </filter>
+  </defs>
+  <ellipse cx="120" cy="203" rx="72" ry="12" fill="#17231b" opacity=".12"/>
+  <g filter="url(#namsanShadow)">
+    <rect x="34" y="24" width="172" height="184" rx="18" fill="#fffdf8" stroke="#d71920" stroke-width="4"/>
+    <rect x="48" y="42" width="144" height="110" rx="13" fill="url(#namsanSky)"/>
+    <circle cx="165" cy="63" r="18" fill="#ffd95a"/>
+    <path d="M48 126c30-25 57-29 89-11 24 14 45 12 55-1v38H48Z" fill="#16833a"/>
+    <path d="M104 125h32l-9 47h-18Z" fill="#9f1418"/>
+    <path d="M110 82h20l4 42h-28Z" fill="#d71920"/>
+    <path d="M114 62h12l4 20h-20Z" fill="#007a3d"/>
+    <path d="M104 82h32" stroke="#fffdf8" stroke-width="6" stroke-linecap="round"/>
+    <path d="M117 50h6v13h-6Z" fill="#e1ab22"/>
+    <rect x="57" y="165" width="94" height="8" rx="4" fill="#16833a" opacity=".32"/>
+    <rect x="57" y="181" width="62" height="8" rx="4" fill="#d71920" opacity=".58"/>
+    <rect x="154" y="162" width="28" height="30" rx="5" fill="#fffdf8" stroke="#e1ab22" stroke-width="3"/>
+  </g>
+</svg>
