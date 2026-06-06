@@ -122,6 +122,7 @@ let state = loadState();
 let copyStore = loadCopy();
 let spinTimer = null;
 let lastRenderedView = null;
+let lastModalKey = null;
 let pendingCelebrate = null;
 let pendingSpin = null;
 
@@ -130,6 +131,22 @@ const motionOK = () => !reducedMotion.matches;
 
 const app = document.querySelector("#app");
 render();
+
+// Escape closes the topmost overlay (sheet, modal, drawer, or spin). Added once
+// at the document level so it is not re-bound on every render.
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+  if (document.activeElement?.isContentEditable) return;
+  if (state.activeRecipeId) state.activeRecipeId = null;
+  else if (state.activeVoucherId) state.activeVoucherId = null;
+  else if (state.settingsOpen) state.settingsOpen = false;
+  else if (state.mapOpen) state.mapOpen = false;
+  else if (state.demoOpen) state.demoOpen = false;
+  else if (state.view.startsWith("spin")) closeSpin();
+  else return;
+  saveState();
+  render();
+});
 
 function item(type, title, body, date = TODAY) {
   return {
@@ -246,6 +263,12 @@ function render() {
     celebrate(pendingCelebrate);
     pendingCelebrate = null;
   }
+  // Move keyboard focus into a modal/sheet when it first opens.
+  const modalKey = state.activeRecipeId ? "recipe" : state.activeVoucherId ? "winx" : state.settingsOpen ? "settings" : null;
+  if (modalKey && modalKey !== lastModalKey) {
+    app.querySelector(".sheet-close")?.focus();
+  }
+  lastModalKey = modalKey;
 }
 
 function runCountUp(active) {
@@ -537,7 +560,7 @@ function renderSpin(type) {
         ${state.spinResult
           ? renderSpinResult(meta)
           : state.spinPhase === "spinning"
-            ? `<p>${meta.body}</p><button class="primary red full" disabled>Đang quay…</button>`
+            ? `<p>${meta.body}</p><button class="primary red full is-loading" disabled aria-live="polite">Đang quay…</button>`
             : `<p>${meta.body}</p><button class="primary red full" data-action="run-spin" ${blocked ? "disabled" : ""}>${blocked ? meta.blocked : "Quay ngay"}</button>`}
       </section>
     </section>
@@ -838,13 +861,13 @@ function renderRecent(source, title, rows, cta) {
   return `
     <section class="recent">
       <div class="section-head"><h2>${title}</h2><button data-action="go-passport">${cta}</button></div>
-      <div class="recent-list">${rows.map((row) => `
+      <div class="recent-list">${rows.length ? rows.map((row) => `
         <article class="${row.type === "loc" ? "clickable" : ""}" ${row.type === "loc" ? `data-loc-recipe="${row.id}"` : ""}>
           ${icon(row.type === "loc" ? "loc" : row.type, row.type)}
           <div><strong>${escapeHtml(row.title)}</strong><p>${escapeHtml(row.body)}</p></div>
           <time>${escapeHtml(row.date)}</time>
         </article>
-      `).join("")}</div>
+      `).join("") : `<p class="recent-empty">Chưa có hoạt động nào, hãy bắt đầu từ Quét QR.</p>`}</div>
     </section>
   `;
 }
@@ -897,15 +920,6 @@ function renderPostcardCard(place, size = "normal") {
     <span class="postcard-card ${size}" style="--postcard-frame: url('${frameFiles.postcard}')">
       <img class="postcard-place" src="${place.image}" alt="${escapeAttr(place.title)}" loading="lazy" />
       <span class="postcard-hangul">${escapeHtml(place.hangul)}</span>
-    </span>
-  `;
-}
-
-function renderVoucherMini() {
-  return `
-    <span class="voucher-mini">
-      <strong>${state.vouchers[0]?.value || 20}%</strong>
-      <small>WinMart</small>
     </span>
   `;
 }
@@ -1387,12 +1401,6 @@ function updateDemo(control) {
   }
   saveState();
   render();
-}
-
-function effectiveDayMode() {
-  if (state.dayMode === "weekday" || state.dayMode === "weekend") return state.dayMode;
-  const day = new Date().getDay();
-  return day === 0 || day === 6 ? "weekend" : "weekday";
 }
 
 function resetDemo() {

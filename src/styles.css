@@ -465,6 +465,18 @@ p {
   margin: 0;
   color: var(--body);
   line-height: 1.45;
+  text-wrap: pretty;
+}
+
+/* Hardening: editable copy and the profile name must wrap, never overflow,
+   when a reviewer double-clicks and types a long string. */
+[data-editable-id],
+.profile-card h1 {
+  overflow-wrap: anywhere;
+}
+
+.profile-card > div {
+  min-width: 0;
 }
 
 .scanner-copy p {
@@ -842,28 +854,6 @@ p {
   object-fit: contain;
 }
 
-.voucher-mini {
-  width: 96px;
-  min-height: 56px;
-  display: grid;
-  place-items: center;
-  padding: 8px;
-  color: #fff;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #007a3d, #16833a);
-}
-
-.voucher-mini strong {
-  font-family: var(--font-head);
-  font-size: 1.5rem;
-  line-height: 0.9;
-}
-
-.voucher-mini small {
-  font-size: 0.62rem;
-  font-weight: 900;
-}
-
 .daily-panel {
   min-height: 178px;
   display: grid;
@@ -1180,8 +1170,9 @@ p {
 }
 
 .filter-row button {
+  min-height: 40px;
   white-space: nowrap;
-  padding: 8px 12px;
+  padding: 8px 14px;
   color: var(--body);
   border-radius: 999px;
   background: #eef2ea;
@@ -1691,6 +1682,25 @@ p {
   box-shadow: none;
 }
 
+/* Loading state stays fully legible (it is feedback, not a dead control) */
+.primary.is-loading,
+.primary.is-loading:disabled {
+  opacity: 1;
+  background: var(--red-deep);
+  box-shadow: 0 5px 0 rgba(120, 12, 16, 0.22);
+  animation: btn-pulse 1.1s ease-in-out infinite;
+}
+
+@keyframes btn-pulse {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.13);
+  }
+}
+
 .primary.full {
   width: 100%;
 }
@@ -2015,6 +2025,15 @@ p {
   padding: 22px 16px;
   color: var(--body);
   text-align: center;
+}
+
+.recent-empty {
+  margin: 4px 0;
+  padding: 14px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.86rem;
+  font-weight: 700;
 }
 
 .empty .streamline-icon {
