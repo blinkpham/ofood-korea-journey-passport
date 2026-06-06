@@ -41,14 +41,18 @@ Open the `Demo` drawer to test:
 - WinX state: no install, installed, or linked.
 - Demo reset.
 
+## Live demo
+
+[blinkpham.github.io/ofood-korea-journey-passport](https://blinkpham.github.io/ofood-korea-journey-passport/) (auto-deployed from `main` via GitHub Pages).
+
 ## Run
 
 ```bash
 npm install
-npm run dev
+npm run dev      # local dev server
+npm run build    # production build to dist/
+npm run preview  # serve the production build
 ```
-
-Run v2 on the next available localhost port. The implementation pass should launch a fresh v2 dev server rather than reusing the v1 server.
 
 ## Scope
 
